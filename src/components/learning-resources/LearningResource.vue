@@ -1,19 +1,16 @@
 <template>
     <li>
-        <div>
+        <base-card>
             <header>
-                <h3>
-                     {{ title }}
-                </h3>
-                <button>Delete</button>
+                <h3>{{ title }}</h3>
+                <base-button mode="flat">Delete</base-button>
             </header>
-        </div>
         <p>{{ description }}</p>
         <nav>
-            <a :href="link"> View resource</a>
+            <a :href="link">View article</a>
         </nav>
+        </base-card>
     </li>
-
 </template>
 
 <script>
